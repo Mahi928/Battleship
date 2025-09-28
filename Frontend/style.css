@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.main_content{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.player{
+    border: 1px solid blue;
+}
+
+.opponent{
+    border: 1px solid blue;
+}
+
+
+.cell{
+    width: 55px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 20px;
+    /* padding: 15px 23px; */
+    font-weight: bolder;
+    cursor: pointer;
+    /* border: 1px solid violet; */
+}
