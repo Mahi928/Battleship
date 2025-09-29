@@ -33,5 +33,9 @@ body{
     /* padding: 15px 23px; */
     font-weight: bolder;
     cursor: pointer;
+    transition: background-color 0.3s;
     /* border: 1px solid violet; */
+}
+.cell.active{
+    background-color: #45de94;
 }

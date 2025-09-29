@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Battleship</title>
+</head>
+<body>
+    <h1 class="welcome">
+        Welcome to Our Game!
+    </h1>
+    <div class="main_content">
+        <div class="player">
+            <h2 style="text-align: center;" id="shipNo">Select position for ship of size 5</h2>
+            <h3 id="timer" style="text-align: center;">Timer: 20 S</h3>
+            <table>
+                <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            <tr>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+                <td class="cell">•</td>
+            </tr>
+            </table>
+        </div>
+        <div class="sidebox">
+        <form id="orientation" style="border: 2px solid blue; padding: 10px;">
+            <h3>Select Orientation</h3> <br>
+            <label for="hor" style="cursor: pointer;">
+                <input type="radio" id="hor" name="orr" value="Horizontal" style="cursor: pointer;" checked> Horizontal
+            </label>
+            <br><br>
+            <label for="ver" style="cursor: pointer;">
+                <input type="radio" id="ver" name="orr" value="Vertical" style="cursor: pointer;"> Vertical
+            </label>
+            <br><br>
+            <div style="text-align: center;">
+            <button type="submit" style="cursor: pointer;">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="select.js"></script>
+</body>
+</html>
