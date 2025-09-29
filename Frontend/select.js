@@ -2,9 +2,7 @@ let ships = [5, 4, 3, 3, 2];
 let shipColors = ["violet", "yellow", "green", "aliceblue", "red"];
 let timer = 20, index = 0, flg = 0, row = -1, col = -1;
 let elements = Array.from(document.getElementsByClassName("cell"));
-let tablearr = [];
-
-// elements[13].style.backgroundColor = "red";  
+let tablearr = [];  
 
 for(let i = 0; i<elements.length; ++i){
     tablearr[i] = 0;
@@ -36,7 +34,13 @@ const countDown = setInterval(()=>{
         if(index<5) document.getElementById("shipNo").innerHTML = `Select position for ship of size ${ships[index]}`;
         else {
             clearInterval(countDown);
-            window.location.replace("http://127.0.0.1:5500/Frontend/index.html")
+            localStorage.setItem("selfarr", JSON.stringify(tablearr));
+            let temparr = [];
+            elements.forEach(ele=>{
+                temparr.push({backgroundColor: ele.style.backgroundColor, innerHTML: ele.innerHTML});
+            })
+            localStorage.setItem("valarr", JSON.stringify(temparr));
+            window.location.replace("http://127.0.0.1:5500/Frontend/index.html");
         }
         flg = 0;
         row = -1;
@@ -100,3 +104,6 @@ document.getElementById("orientation").addEventListener("submit", function(event
         }
     }
 })
+
+localStorage.setItem("selfarr", JSON.stringify(tablearr));
+localStorage.setItem("selfele", JSON.stringify(elements));
